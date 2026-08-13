@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
 
-//ExercÌcio 1:
+//Exerc√≠cio 1:
 
 	int primeiro, segundo, aux;
 	printf("Insira o primeiro valor: ");
@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	
 	
 	
-//ExercÌcio 2: (NAO FINALIZADO)
+//Exerc√≠cio 2: (NAO FINALIZADO)
 
 	double valor;
 	printf("Insira o valor: ");
@@ -42,15 +42,15 @@ int main(int argc, char *argv[]) {
 
 	
 	
-//ExercÌcio 3:
+//Exerc√≠cio 3:
 
 
-//ExercÌcio 4:
+//Exerc√≠cio 4:
 
 
 
 
-//ExercÌcio 5:
+//Exerc√≠cio 5:
 
 	
 	float soma, media, multiplicacao, valor1, valor2, valor3, valor4;
@@ -76,6 +76,28 @@ int main(int argc, char *argv[]) {
 	multiplicacao = (valor1 * valor2 * valor3 * valor4);
 	
 	printf("\n O produtorio e: %f", multiplicacao);
+
+
+	
+//Exerc√≠cio 6:
+	
+
+	int idadeemdias, quantidadeanos, quantidademeses, quantidadedias, resto; 
+	
+	printf("\n Digite sua idade em DIAS: ", idadeemdias);
+	scanf("%d", &idadeemdias);
+	
+	quantidadeanos = idadeemdias / 360;
+	resto = idadeemdias % 360;
+	
+	quantidademeses = resto / 30;
+
+	quantidadedias = resto % 30; 
+		
+	printf("Voce nasceu faz %d anos, %d meses e %d dias", quantidadeanos, quantidademeses, quantidadedias);
+	
+	
+	
 	
 	
 	
