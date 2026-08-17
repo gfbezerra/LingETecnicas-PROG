@@ -24,28 +24,27 @@ int main(int argc, char *argv[]) {
 	
 	
 	
-//Exercício 2: (NAO FINALIZADO)
+//Exercício 2: 
 
-	double valor;
-	printf("Insira o valor: ");
-	scanf("%lf", &valor);
-	
-	
-	
-	
-	
-	printf("Resultado: \n", valor);
-	
-
-	
-	
-
-	
 	
 //Exercício 3:
 
 
 //Exercício 4:
+
+	double salariofixo, vendastotal, comissao, total;
+	
+	printf("Qual seu salario?: ");
+	scanf("%lf", &salariofixo);
+	
+	printf("Qual o seu valor total em vendas mensal?: ");
+	scanf("%lf", &vendastotal);
+	
+	comissao = (vendastotal * 15)/100;
+	
+	total = (salariofixo + comissao);
+	
+	printf("\n O valor total a receber esse mes e de: R$ %.2lf ", total);
 
 
 
