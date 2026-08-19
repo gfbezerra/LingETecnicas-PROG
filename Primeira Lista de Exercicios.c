@@ -154,7 +154,26 @@ int main(int argc, char *argv[]) {
 	
 	distancia = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 	
-	printf("A distancia entre os valores sao de: %f ", distancia);
+	printf("A distancia entre os valores sao de: %lf ", distancia);
+
+	//Exercício 8: (versao professor) 
+
+	float x1, x2, y1, y2, distancia, p1, p2;
+	
+	printf("Insira as coordenadas do ponto P1: ");
+	scanf("%f  %f", &x1, &y1);
+	
+	printf("Insira as coordenadas do ponto P1: ");
+	scanf("%f  %f", &x1, &y1);
+	
+	p1 = pow(x2-x1, 2);
+	p2 = pow(y2-y1, 2);
+	
+	distancia = sqrt(p1+p2);
+	
+	
+	
+	printf("Distancia (%f)",distancia);
 	
 	
 	
