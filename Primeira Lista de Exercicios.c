@@ -30,6 +30,31 @@ int main(int argc, char *argv[]) {
 	
 //Exercício 3:
 
+	int n, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2, resultado;
+	printf("Entre com o valor para a conversao: ");
+	scanf("%d", &n);
+	
+	bit_64 = n%2;
+	resultado = n/2;
+	
+	bit_32 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_16 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_8 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_4 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_2 = resultado%2;
+	resultado = resultado/2;
+	
+	printf("O numero %d em binario = %d%d%d%d%d%d%d", n,
+			 resultado%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+
 
 //Exercício 4:
 
