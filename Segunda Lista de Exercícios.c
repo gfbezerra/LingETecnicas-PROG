@@ -21,6 +21,54 @@ int main(int argc, char *argv[]) {
 	
 //Exercício 2
 
+	float kmh, conversao;
+	
+	printf("\nDigite a velocidade em km/h: ");
+	scanf("%f", &kmh);
+	
+	conversao = kmh/3.6;
+	
+	printf("A velocidade convertida de km/h para m/s: %f ", conversao);
+	
+	
+//Exercício 3
+
+	float reais, cotacao, conv;
+	
+	printf("\nQuanto esta o valor do dolar hoje?: ");
+	scanf("%f", &cotacao);
+	printf("Qual o valor em real?: ");
+	scanf("%f", &reais);
+	
+	conv = reais/cotacao;
+	
+	printf("Este e o valor em DOLAR: USD%f ", conv);
+
+
+//Exercício 4
+
+	float celsius, fahrenheint;
+	
+	printf("\nTemperatura em graus celcius: ");
+	scanf("%f", &celsius);
+	
+	fahrenheint = celsius * (9.0/5.0) + 32.0;
+	
+	printf("A temperatura convertida para fahrenheint e igual a: %fF ", fahrenheint);
+
+
+//Exercício 5
+
+	float graus, radianos, pi;
+	
+	printf("\nDigite o angulo: ");
+	scanf("%f", &graus);
+	
+	pi = 3.141592;
+	radianos = graus * pi / 180;
+	
+	printf("A conversao do angulo de graus para radianos e de: %f rad ", radianos);
+
 
 
 
