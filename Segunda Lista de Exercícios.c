@@ -70,10 +70,63 @@ int main(int argc, char *argv[]) {
 	printf("A conversao do angulo de graus para radianos e de: %f rad ", radianos);
 
 
+//Exercício 6
+
+	int numero, antecessor, sucessor;
+
+	printf("\nDigite um numero: ");
+	scanf("%d", &numero);
+
+	antecessor = numero - 1;
+	sucessor = numero + 1;
+
+	printf("O antecessor do numero digitado e: %d e o sucessor: %d", antecessor, sucessor);
 
 
+//Exercício 7 
 
-//Exercício 10:
+	float primeiro, segundo, terceiro;
+	float total = 780.000;
+
+	primeiro = total * 0.46;
+	segundo = total * 0.32;
+	terceiro = total * 0.22;
+
+	printf("\nO valor dividido de R$%.3f, ficou R$%.3f para o primeiro ganhador, R$%.3f para o segundo e R$%.3f para o terceiro ", total, primeiro, segundo, terceiro);
+
+
+//Exercício 8 
+
+	int tempo, segundos, minutos, horas;
+	
+	printf("Insira uma quantidade de tempo em segundos que durara o evento: ");
+	scanf("%d", &tempo);
+	
+	segundos = tempo % 60;
+	horas = tempo / 3600;
+	minutos = (tempo % 3600) / 60;
+	
+	printf("O evento durara %d horas, %d minutos e %d segundos ", horas, minutos, segundos);
+
+
+//Exercício 9
+
+	float tempoviagem, velmedia, litrosnecessarios, distanciapercorrida;
+	 
+	printf("\nQual o tempo de viagem? (em horas): ");
+	scanf("%f", &tempoviagem);
+	
+	printf("Qual a velocidade media do carro durante o percurso?: ");
+	scanf("%f", &velmedia);
+	
+	distanciapercorrida = tempoviagem * velmedia;
+	litrosnecessarios = distanciapercorrida / 12;
+	
+	printf("Distancia percorrida: %.3f km", distanciapercorrida);
+	printf("\nLitros necessarios: %.3f litros", litrosnecessarios);
+
+
+//Exercício 10
 
 	int a, b, c, d, maior, maior_temp1, maior_temp2;
 	printf("Informe os valores a serem comparados: ");
