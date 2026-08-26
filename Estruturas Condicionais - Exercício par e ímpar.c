@@ -5,23 +5,23 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a, b, c, r;
+	//int a, b, c, r;
 	
-	printf("Entre com os valores para A B C: ");
-	scanf("%d %d %d", &a, &b, &c);
+	//printf("Entre com os valores para A B C: ");
+	//scanf("%d %d %d", &a, &b, &c);
 	
-	if (a>b){
-		r = a;
-	}else 
-		r = b;
-	if(c>r){
-		r = c;
-	}
+	//if (a>b){
+		//r = a;
+	//}else 
+		//r = b;
+//if(c>r){
+	//	r = c;
+//	}
 	
-	printf("%d eh o maior", r);
+//	printf("%d eh o maior", r);
 	
 	
-//ÕMPAR OU PAR:	
+//√çMPAR OU PAR:	
 	
 	int a, par, impar;
 	
@@ -30,14 +30,13 @@ int main(int argc, char *argv[]) {
 	
 	if (a % 2 != 0){
 		a = impar;
-		printf("O n˙mero È IMPAR!");
+		printf("O numero e IMPAR!");
 	}
 	else{
 		a = par;
-		printf("O n˙mero È PAR!");	
+		printf("O numero e PAR!");	
 	} 
 
 	
 	
 	return 0;
-}
