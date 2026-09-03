@@ -13,7 +13,7 @@ void exec3 (){
         printf("\nInsira a temperatura em C: \n");
         scanf("%f", &tempc);
         tempf = tempf * (9.0/5.0) + 32.0;
-        printf("\nOs %f C sao %f F ", tempc, tempf);
+        printf("\nOs %0.2f C sao %0.2f F ", tempc, tempf);
 
 }
 
@@ -22,7 +22,7 @@ void exec2 (){
     float reais, cota;
         printf("Insira a cotacao e o valor: \n");
         scanf("%f %f", &cota, &reais);
-        printf("\nOs %f reais sao %f dolares", reais, (reais/cota));    
+        printf("\nOs %0.2f reais sao %0.2f dolares", reais, (reais/cota));    
 
 
 }
@@ -33,8 +33,8 @@ void exec8(){
         printf("\nInsira o tempo em segundos: \n");
         scanf("%d", &sec);
         horas = sec/3600;
-        min = (sec - (sec%3600))/60;
-        sec = sec -((horas * 3600)+(min*60));
+        min = (sec - (sec % 3600)) / 60;
+        sec = sec - ((horas * 3600) + (min * 60));
         printf("\t %d:%d:%d", horas, min, sec);
 
 
