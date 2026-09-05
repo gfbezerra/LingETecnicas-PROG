@@ -27,6 +27,25 @@ int main(int argc, char *argv[]) {
 	
 //Exercício 2: 
 
+	double valordouble, a;
+	int n = 0;
+
+	printf("\nInsira um número positivo qualquer: ");
+	scanf("%lf", &valordouble);
+
+	a = valordouble;
+
+	while (a >= 10){
+		a = a / 10;
+		n++;
+	}
+	while (a < 1){
+		a = a * 10;
+		n--;
+	}
+
+	printf("\nO valor %lf em notacao cientifica é %0.2lf x 10^%d", valordouble, a, n);
+
 	
 //Exercício 3:
 
