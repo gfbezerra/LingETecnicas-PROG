@@ -53,10 +53,43 @@ printf("\nO segundo digito após o traco do seu CPF é: %d ", resto2);
 
 return 0;
 
+}
+
+
+//Exercício 2: Conversor Dinâmico
+
+int main () {
+int temperatura, fahrenheit, celsius;
+char conversao;
+
+printf("Digite uma temperatura, seja ela em fahrenheit ou celsius: ");
+scanf("%d", &temperatura);
+
+printf("Para qual tipo de medição quer converter? (f/c): ");
+scanf(" %c", &conversao);
 
 
 
+if (conversao == 'f' ){
+   
+    celsius = temperatura;
+    fahrenheit = (celsius * 9/5) + 32;
+   
+    printf("Sua conversão de celsius para fahrenheit é igual a: %d F", fahrenheit);
+        
+        
+} else if (conversao == 'c' ){
 
+    fahrenheit = temperatura;
+    celsius = (fahrenheit - 32) * 5/9;
+
+   printf("Sua conversão de fahrenheit para celsius é igual a: %d C", celsius); 
+}
+else {
+    printf("Opção inválida.");
+}
+
+return 0;
 
 
 }
