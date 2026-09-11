@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-//Exercício 7 e 8: INSS, IRPF
+//Exercício 7, 8 e 9: INSS, IRPF e Holerite
 
 float calc_inss (float salario){
     if (salario <= 1412.00) return salario * 0.075;
@@ -21,7 +21,7 @@ float calc_irpf (float salario_base){
 
 int main (){
 
-    float salario, desconto, imposto, salario_base; 
+    float salario, desconto, imposto, salario_base, valor, horas, salario_liquido, salario_bruto; 
     scanf("%f", &salario);
 
     desconto = calc_inss(salario);
@@ -31,6 +31,27 @@ int main (){
     printf("\nDesconto INSS: %f", desconto);
     printf("\nSalário base: %f", salario_base);
     printf("\nImposto IRPF: %f", imposto);
+
+    printf("\nValor da hora trabalhada: ");
+    scanf("%f", &valor);
+
+    printf("\nQuantidade de horas no mês: ");
+    scanf("%f", &horas);
+
+    salario_bruto = horas * valor;
+    salario_liquido = salario_bruto - desconto - imposto;
+
+    printf(
+    "========================================\n"
+    "RECIBO DE PAGAMENTO DE SALÁRIO (CONTRA-CHEQUE)\n"
+    "========================================\n"
+    "Salário Bruto (Horas x Valor):   R$ %0.2f\n"
+    "(-) Desconto INSS:               R$ %0.2f\n"
+    "(-) Desconto IRPF:               R$ %0.2f\n"
+    "----------------------------------------\n"
+    "LÍQUIDO A RECEBER:               R$ %0.2f\n"
+    "========================================",
+    salario_bruto, desconto, imposto, salario_liquido);
 
     return 0;
 }
