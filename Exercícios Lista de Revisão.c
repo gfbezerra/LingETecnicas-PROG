@@ -92,4 +92,42 @@ else {
 return 0;
 
 
+
+//Ecercício 3: Média Escolar
+
+int main(){
+
+
+float primeiranota, segundanota, terceiranota, media, calcpara10, total;
+char nome[50];
+
+printf("Digite o nome do aluno(a): ");
+scanf(" %s", nome);
+
+printf("Digite sua primeira nota: ");
+scanf(" %f", &primeiranota);
+
+printf("Digite sua segunda nota: ");
+scanf(" %f", &segundanota);
+
+printf("Digite sua terceira nota: ");
+scanf(" %f", &terceiranota);
+
+media = (primeiranota + segundanota + terceiranota) / 3;
+total = 10.0;
+calcpara10 = total - media;
+
+if (media < 4.0) {
+    printf("\033[0;31mVocê está REPROVADO!\033[0m");
+} else if (media >= 4.0 && media < 7.0) {
+    printf("\033[0;32mVocê está de EXAME!, Falta %.2f para atingir 10\033[0m", calcpara10);
+} else if (media >= 7.0 && media <= 10.0) {
+    printf("\033[0;34mVocê está APROVADO!\033[0m");
 }
+
+return 0;
+    
+}
+
+
+
