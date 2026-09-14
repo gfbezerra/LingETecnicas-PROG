@@ -93,7 +93,7 @@ return 0;
 
 
 
-//Ecercício 3: Média Escolar
+//Exercício 3: Média Escolar
 
 int main(){
 
