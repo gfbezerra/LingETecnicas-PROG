@@ -2,6 +2,55 @@
 #include <stdlib.h>
 
 
+//Exercício 5: Terminal Infinity Cash
+void calc_saque (int valor, int *n100, int *n50, int *n10, int *n5, int *n2, int *n1){
+
+    *n100 = valor / 100;
+    valor = valor % 100;
+
+    *n50 = valor / 50;
+    valor = valor % 50;
+
+    *n10 = valor / 10;
+    valor = valor % 10;
+
+    *n5 = valor / 5;
+    valor = valor % 5;
+
+    *n2 = valor / 2;
+    valor = valor % 2;
+
+    *n1 = valor / 1;
+    valor = valor % 1;
+}
+
+
+int main(){
+
+
+int valor, n100, n50, n10, n5, n2, n1;
+
+printf("Quanto você quer sacar?: ");
+scanf("%d", &valor);
+
+calc_saque(valor, &n100, &n50, &n10, &n5, &n2, &n1);
+
+printf("Resumo da contagem de cada nota: \n");
+if (n100 > 0) printf("%d nota(s) de R$100\n", n100);
+if (n50 > 0) printf("%d nota(s) de R$50\n", n50);
+if (n10 > 0) printf("%d nota(s) de R$10\n", n10);
+if (n5 > 0) printf("%d nota(s) de R$5\n", n5);
+if (n2 > 0) printf("%d nota(s) de R$2\n", n2);
+if (n1 > 0) printf("%d moeda(s) de R$1\n", n1);
+
+
+return 0;
+    
+}
+
+
+
+
 //Exercício 7, 8 e 9: INSS, IRPF e Holerite
 
 float calc_inss (float salario){
