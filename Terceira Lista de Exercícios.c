@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#define PI 3.14159265
 
 
 //Exercício 5: Terminal Infinity Cash
@@ -45,9 +47,57 @@ if (n1 > 0) printf("%d moeda(s) de R$1\n", n1);
 
 
 return 0;
-    
 }
 
+
+//Exercício 6: ENIAC – Trajetória
+
+int main(){
+
+float v0, angulo, alcance_max, tempo_voo, gravidade, atrito, rad, graus, loop;
+float x, y, vx, vy, ax, ay, dt;
+
+printf("Digite a velocidade inicial (v0): ");
+scanf("%f", &v0);
+
+printf("Digite o ângulo: ");
+scanf(" %f", &angulo);
+
+gravidade = 9.8;
+atrito = 0.5;
+dt = 0.01;
+
+rad = angulo * (PI / 180);
+
+vx = v0 * cos(rad);
+vy = v0 * sin(rad);
+
+x = 0;
+y = 0;
+tempo_voo = 0;
+
+while (y >= 0) {
+    ax = -atrito * vx;
+    ay = -gravidade - atrito * vy;
+
+    vx = vx + ax * dt;
+    vy = vy + ay * dt;
+
+    x = x + vx * dt;
+    y = y + vy * dt;
+
+    tempo_voo = tempo_voo + dt;
+}
+
+alcance_max = x;
+
+printf("\nAlcance máximo: %.2f metros\n", alcance_max);
+printf("Tempo de voo: %.2f segundos\n", tempo_voo);
+
+
+return 0;
+
+}
 
 
 
