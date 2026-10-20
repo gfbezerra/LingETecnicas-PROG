@@ -60,12 +60,54 @@
 
 	
 	// Exercicio 2;
-	/* Faça um programa que recaba um nuumero n e realize a soma dos
+	/* Faça um programa que receba um nuumero n e realize a soma dos
 	n primeiros termos da sequência definda como: 
 	[S = 1/2; 1/4; 1/8 1/16... N] */
 
+	int main(){
+
+        	int i, n;
+        	double soma = 0, termo = 0.5;
+        
+        	printf("Digite um número: ");
+        	scanf("%d", &n);
+
+        	for (i = 1; i <= n; i++){
+            	soma += termo;
+            	termo /= 2;
+
+        	}
+
+        	printf("Soma dos %d primeiros termos: %lf\n", n, soma);
+
+        	return 0;
+	}
+
 	// Exercicio 3;
-	/*Crie um programa qe exiba na tela, o trîangulo de pascal. */
+	/*Crie um programa que exiba na tela, o trîangulo de pascal. */
+
+	int main() {
+        	int n, i, j, k;
+        	int valor;
+
+        	printf("Quantas linhas do triangulo de Pascal? ");
+        	scanf("%d", &n);
+
+        	for (i = 0; i < n; i++) {
+            	for (k = 0; k < n - i - 1; k++) {
+                	printf("  ");
+         	}
+            	valor = 1; 
+
+            	for (j = 0; j <= i; j++) {
+                	printf("%3d ", valor);
+                	valor = valor * (i - j) / (j + 1); 
+            	}
+            	printf("\n");
+        	}
+
+        	return 0;
+    	}
 	/*return 0;*/
 
     
